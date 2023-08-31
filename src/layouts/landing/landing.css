@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kolker+Brush&family=Montserrat:wght@500&family=Roboto+Slab&display=swap');
+
+
+.landing-image{
+    background-image: url("../../assets/images/ev-3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.custom-center{
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 6vw;
+}
