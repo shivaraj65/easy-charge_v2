@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/easy-charge_v2/static/css/main.52d3f0c5.css",
-    "main.js": "/easy-charge_v2/static/js/main.1c19041a.js",
+    "main.js": "/easy-charge_v2/static/js/main.d16f58d7.js",
     "static/js/787.8c381220.chunk.js": "/easy-charge_v2/static/js/787.8c381220.chunk.js",
     "static/media/ev-3.png": "/easy-charge_v2/static/media/ev-3.cbe1eb7a00c06960e101.png",
     "static/media/tron.png": "/easy-charge_v2/static/media/tron.3206996715de1a3dcc0d.png",
     "index.html": "/easy-charge_v2/index.html",
     "main.52d3f0c5.css.map": "/easy-charge_v2/static/css/main.52d3f0c5.css.map",
-    "main.1c19041a.js.map": "/easy-charge_v2/static/js/main.1c19041a.js.map",
+    "main.d16f58d7.js.map": "/easy-charge_v2/static/js/main.d16f58d7.js.map",
     "787.8c381220.chunk.js.map": "/easy-charge_v2/static/js/787.8c381220.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52d3f0c5.css",
-    "static/js/main.1c19041a.js"
+    "static/js/main.d16f58d7.js"
   ]
 }
