@@ -1,7 +1,7 @@
 import React from "react";
 import "./landing.css";
 import tronImg from "../../assets/images/tron.png";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import { motion } from "framer-motion";
 // import { LazyMotion, domAnimation, m } from "framer-motion";
 
@@ -15,7 +15,7 @@ const { Meta } = Card;
 const { Title, Paragraph, Text, Link } = Typography;
 
 const Landing = () => {
-  // let navigate = useNavigate();
+  let navigate = useNavigate();
 
   return (
     <div>
@@ -56,13 +56,17 @@ const Landing = () => {
                   type="primary"
                   size={"large"}
                   style={{ minWidth: "200px" }}
+                  onClick={() => {
+                    navigate("/signup");
+                  }}
                 >
                   <b>SIGNUP</b>
                 </Button>
                 <Button
                   className="font1"
                   size={"large"}
-                  style={{ minWidth: "200px", color: '#52c41a' }}
+                  style={{ minWidth: "200px", color: "#52c41a" }}
+                  onClick={()=>{navigate("/login")}}
                 >
                   <b>LOGIN</b>
                 </Button>
@@ -78,7 +82,8 @@ const Landing = () => {
             Currently available in three major Cities
           </Title>
           <Paragraph type="warning" style={{ margin: "0 0 4% 0" }}>
-            * This is a simulation protype and we are pushing forward to the REALITY.
+            * This is a simulation protype and we are pushing forward to the
+            REALITY.
           </Paragraph>
         </Typography>
         <Space
