@@ -1,8 +1,16 @@
 import { useEffect, useState } from "react";
 import './App.css';
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 //layout imports
 import Landing from './layouts/landing/landing'
+import Login from './layouts/login/login'
+import Signup from './layouts/signup/signup'
 
 function Apps() {
   const [tronInstance, setTronInstance] = useState("");
@@ -87,8 +95,21 @@ function Apps() {
 
   return (
     <div className="App">
-      <Landing/>
-      <button
+       <Router>
+        <Routes>
+          <Route exact path="/" element={<Landing/>} />
+            <Route exact path="/login" element={<Login/>} />
+            <Route exact path="/signup" element={<Signup/>} />
+            {/* <Route exact path="/coinbaseauth/" element={<Auth/>} />
+            <Route exact path="/mailauth/:id" element={<Redirecter/>} />
+            <Route exact path="/dashboard/:email" element={<Dash/>} />
+            <Route exact path="/user/:email" element={<Profile/>} />        
+            <Route exact path="/simulator/:address" element={<Simulator/>} />  */}
+
+          
+        </Routes>
+      </Router>
+      {/* <button
         onClick={() => {
           accountInfo();
         }}
@@ -102,7 +123,7 @@ function Apps() {
         }}
       >
         transact tron
-      </button>
+      </button> */}
     </div>
   );
 }

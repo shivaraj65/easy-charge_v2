@@ -62,7 +62,7 @@ const Landing = () => {
                 <Button
                   className="font1"
                   size={"large"}
-                  style={{ minWidth: "200px" }}
+                  style={{ minWidth: "200px", color: '#52c41a' }}
                 >
                   <b>LOGIN</b>
                 </Button>
